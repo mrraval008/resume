@@ -1,0 +1,36 @@
+<div class="sidebar_container">
+    <button class="btn bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav"
+        aria-controls="bd-docs-nav" aria-expanded="true" aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+            <title>Menu</title>
+            <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+        </svg>
+    </button>
+    <nav class="collapse bd-links scroll full-height" id="bd-docs-nav" aria-label="Main navigation">
+        <div class="bd-toc-item active">
+            <ul class="nav bd-sidenav">
+                    <li>
+                        <span>𝓜</span>
+                    </li>
+                <li *ngFor="let config of _sidebarConfig">
+                    <a [routerLink]="config.url" [attr.data-title]="config.title"  class="position-relative" routerLinkActive="active-link">
+                        <i [class]="config.iconName" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li (click)="togglePause()">  
+                        <audio #audioPlayerElem src="../../../assets/audio/music.mp3" autoplay></audio>
+                        
+                    <div class="lines">
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                        <span [ngClass]="{'animate':isPlaying}"></span>
+                    </div>
+                    <h6>Sound</h6>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
