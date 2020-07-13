@@ -1,0 +1,89 @@
+<section class="about_section slide-top">
+    <div class="container my_container">
+        <div class="col-lg-12 col-sm-12 about_container">
+            <div class="title_container  main_title">
+                <h2 class="title">About Me</h2>
+                <span></span>
+            </div>
+            <div class="black_box">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="photo">
+                            <img src="../../../assets/images/milan_raval.jpg" class="mr-3 img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-8">
+                        <h3 class="mt-0">Milan Raval</h3>
+                        <p class="location_title">
+                            <i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+                            Bangalore, India</p>
+                        <p class="about_text">
+                            Hello! I’m Milan Raval a self-taught Developer with over five years work experience. Now I’m based in Bangalore, India.
+                            <br/>
+                        </p>
+                        <p class="about_text">
+                            I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal
+                            is to always build products that provide pixel-perfect, performant experiences.
+                        </p>
+                        <p class="about_text">
+                            I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country.
+                        </p>
+                    </div>
+                </div>
+                <div class="container about_pills">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+                        <div class="col">
+                            <div class="media">
+                                <div class="mr-3 icon_circle">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="media-body">
+                                    <p class="mt-0">5 years Job</p>
+                                    <span>Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="media">
+                                <div class="mr-3 icon_circle">
+                                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                                </div>
+                                <div class="media-body">
+                                    <p class="mt-0">7+ Projects</p>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                                <button class="btn" (click)="downloadCV()"><span> Download CV</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my_container">
+        <div class="title_container">
+            <h2 class="title">My Interests</h2>
+            <span></span>
+        </div>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="black_box">
+            <div class="container intrest_pills">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                    <div class="col" *ngFor="let int of _interstConfig">
+                        <div class="media">
+                            <div class="mr-3 icon_circle">
+                                <i [class]="int.iconName" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="mt-0">{{int.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
