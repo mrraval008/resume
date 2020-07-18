@@ -10,6 +10,7 @@
     "e2e": "ng e2e",
     "server":"http-server dist/resume"
   },
+  "homepage": "https://mrraval008.github.io/resume/",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
