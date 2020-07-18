@@ -3,46 +3,63 @@
         <h2 class="title">Portfolio</h2>
         <span></span>
     </div>
-
+    <div class="filter">
+        <ul>
+            <li>
+                <input type="radio" name="project" id="allproject"  checked (change)="filterText='allproject'">
+                <label for="allproject">All</label>
+            </li>
+            <li>
+                <input type="radio" name="project" id="fullproject" (change)="filterText='fullproject'">
+                <label for="fullproject">Full Stack</label>
+            </li>
+            <li>
+                <input type="radio" name="project" id="frontproject" (change)="filterText='frontproject'">
+                <label for="frontproject">Fron End</label>
+            </li>
+            <li>
+                <input type="radio" name="project" id="websiteproject" (change)="filterText='websiteproject'">
+                <label for="websiteproject">WebSite</label>
+            </li>
+        </ul>
+    </div>
     <div class="container">
-        <div class="row item d-flex">
-            <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block right">
-                <a href="">
-                    <img src="../../../assets/images/home-bg.jpg" alt="">
+        <div class="row item d-flex" [ngClass]="{'flex-row-reverse':(ind%2!=0),'slide-in-left':(ind%2!=0),'slide-in-right':(ind%2==0)}" *ngFor="let config of portfolioConfig | customFilter:filterText:'type',let ind = index">
+            <div class="col-lg-7 col-md-7 d-none d-md-block d-lg-block right">
+                <a [href]="config.projectLink" target="_blank">
+                    <div class="img_container">
+                        <img [src]="config.img" alt="">
+                    </div>
                 </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 left">
-                <!-- <div class="d-none d-sm-block d-xs-block d-md-none d-lg-none">
-                    <img src="../../../assets/images/home-bg.jpg" alt="">
-                </div> -->
+            <div class="col-lg-5 col-md-5 col-sm-12 left">
                 <div class="port_container">
                     <span>Featured Project</span>
-                    <h4>Facebook Clone</h4>
-                    <div class="description" [ngClass]="{'translate-left':true}"><span>A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,
-                            starred repositories, and sort through your top repos by number of stars, forks, and size.
-                        </span></div>
+                    <h4>{{config.name}}</h4>
+                    <div class="description" [ngClass]="{'translate-left':(ind%2==0)}">
+                        <span>{{config.description}}
+                        </span>
+                    </div>
                     <div>
                         <ul>
-                            <li>Node.js 1</li>
-                            <li>Node.js 2</li>
-                            <li>Node.js 3 </li>
-                            <li>Node.js 4</li>
-                            <li>Node.js 4</li>
+                            <li *ngFor="let stack of config.techStack">{{stack}}</li>
                         </ul>
                     </div>
                     <div>
-                        <a href="">
+                        <a [href]="config.gitLink" target="_blank" data-toggle="tooltip" data-placement="top" title="FronEnd Repo">
                             <i class="fa fa-github mr-3" aria-hidden="true"></i>
                         </a>
-                        <a href="">
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        <a [href]="config.projectLink" target="_blank">
+                            <i class="fa fa-external-link mr-3" aria-hidden="true"></i>
                         </a>
-
+                        <a *ngIf="config.gitBackEnd" [href]="config.gitBackEnd" target="_blank" data-toggle="tooltip" data-placement="top" title="BackEnd Repo">
+                                <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row item d-flex" [ngClass]="{'flex-row-reverse':true}">
+        <!-- <div class="row item d-flex" [ngClass]="{'flex-row-reverse':true}">
             <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
                 <a href="">
                     <img src="../../../assets/images/home-bg.jpg" alt="">
@@ -105,6 +122,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

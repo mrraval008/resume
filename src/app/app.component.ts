@@ -12,7 +12,6 @@ export class AppComponent {
   title = 'resume';
   public toggleThemeBar = '100%';
   constructor(private themeService:ThemeserviceService){
-    
   }
   onThemeColorChange(event){
     if(event.target.id){

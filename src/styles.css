@@ -402,19 +402,19 @@ canvas {
 	height: 30px;
 	position: relative;
 }
- .spinner_container.animation-3 {
+ .spinner_container.animation_spinner {
 	animation: rotation 1s infinite;
 }
-.spinner_container.animation-3 .shape1 {
+.spinner_container.animation_spinner .shape1 {
 	border-top-left-radius: 10px;
 }
-.spinner_container.animation-3 .shape2 {
+.spinner_container.animation_spinner .shape2 {
 	border-top-right-radius: 10px;
 }
-.spinner_container.animation-3 .shape3 {
+.spinner_container.animation_spinner .shape3 {
 	border-bottom-left-radius: 10px;
 }
-.spinner_container.animation-3 .shape4 {
+.spinner_container.animation_spinner .shape4 {
 	border-bottom-right-radius: 10px;
 }
 
@@ -451,7 +451,7 @@ canvas {
 }
 
 
-.animation-3 .shape1 {
+.animation_spinner .shape1 {
 	animation: animation3shape1 0.5s ease 0s infinite alternate;
 }
 @keyframes animation3shape1 {
@@ -462,7 +462,7 @@ canvas {
 		transform: translate(5px, 5px);
    }
 }
-.animation-3 .shape2 {
+.animation_spinner .shape2 {
 	animation: animation3shape2 0.5s ease 0s infinite alternate;
 }
 @keyframes animation3shape2 {
@@ -473,7 +473,7 @@ canvas {
 		transform: translate(-5px, 5px);
    }
 }
-.animation-3 .shape3 {
+.animation_spinner .shape3 {
 	animation: animation3shape3 0.5s ease 0s infinite alternate;
 }
 @keyframes animation3shape3 {
@@ -484,7 +484,7 @@ canvas {
 		transform: translate(5px, -5px);
    }
 }
-.animation-3 .shape4 {
+.animation_spinner .shape4 {
 	animation: animation3shape4 0.5s ease 0s infinite alternate;
 }
 @keyframes animation3shape4 {
@@ -496,8 +496,8 @@ canvas {
    }
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	body{
 		font-size: 10px
 	}
-} */
+}
