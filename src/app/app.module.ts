@@ -12,6 +12,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CustomFilterPipe } from './pipes/custom-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { environment } from '../environments/environment';
     SidebarComponent,
     ResumeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    CustomFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -198,3 +198,72 @@ export const skillsChartConfig = [
         percentage:'40%'
     }
 ]
+export const portfolioConfig = [
+    {
+        img:'../../../assets/images/mybook_laptop.png',
+        name:'Facebook Clone',
+        description:'A Social Media App to Create/Manage Posts/Comments/Likes. Includes supprt of Live Chat to mingle with closed ones with Live notification enabled on new Message/Like',
+        techStack:['MEAN Stack','Socket.io','Nginx','Docker','JWT'],
+        gitLink:'https://github.com/mrraval008/mybook_angular',
+        gitBackEnd:'https://github.com/mrraval008/mybook_nodejs',
+        projectLink:'https://my-book11.herokuapp.com/',
+        type:'fullproject'
+    },
+    {
+        img:'../../../assets/images/mytour_laptop.png',
+        name:'Tour Booking',
+        description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        techStack:['MEAN Stack','Stripe Payment','MapBox','Nginx','Docker','JWT'],
+        gitLink:'https://github.com/mrraval008/mytour_angular',
+        gitBackEnd:'https://github.com/mrraval008/mytour_nodejs',
+        projectLink:'https://mytour11.herokuapp.com/',
+        type:'fullproject'
+    },
+    {
+        img:'../../../assets/images/forkify_laptop.png',
+        name:'Recipe App',
+        description:'A recipe App where you can search different food Items. It Includes what all ingridiens and in how much quantity you need to prepare that item.You can add item to your favourite',
+        techStack:['Javascript','HTML','CSS' , 'LocalStorage','Forkify-api'],
+        gitLink:'https://github.com/mrraval008/forkify_app',
+        projectLink:'https://mrraval008.github.io/forkify_app/',
+        type:'frontproject'
+    },
+    {
+        img:'../../../assets/images/budget_laptop.png',
+        name:'Budget Controller',
+        description:'A nicer way to manage your Monthly Budget. You can perform CURD operation for each Item. Includes support of Localstorage to store data.',
+        techStack:['Javascript','HTML','CSS' , 'LocalStorage'],
+        gitLink:'https://github.com/mrraval008/budget_controller',
+        projectLink:'https://mrraval008.github.io/budget_controller/',
+        type:'frontproject'
+    },
+   
+  
+    {
+        img:'../../../assets/images/dice_laptop.png',
+        name:'Rolling Dice Game',
+        description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
+        techStack:['Javascript','HTML','CSS'],
+        gitLink:'https://github.com/mrraval008/rolling_dice_game',
+        projectLink:'https://mrraval008.github.io/rolling_dice_game/',
+        type:'frontproject'
+    },
+    {
+        img:'../../../assets/images/omni_laptop.png',
+        name:'Omni Food Website',
+        description:'A online food delivery website to showcase food quality and monthly subscription plan.',
+        techStack:['HTML','CSS','Jquery'],
+        gitLink:'https://github.com/mrraval008/omni_food',
+        projectLink:'https://mrraval008.github.io/omni_food/',
+        type:'websiteproject'
+    },
+    // {
+    //     img:'../../../assets/images/home-bg.jpg',
+    //     name:'full stack 3 Facebook Clone',
+    //     description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
+    //     techStack:['Node.js 1','Node.js 2','Node.js 3','Node.js 4'],
+    //     gitLink:'abc',
+    //     projectLink:'aaa',
+    //     type:'fullproject'
+    // },
+]

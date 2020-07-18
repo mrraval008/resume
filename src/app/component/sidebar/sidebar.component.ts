@@ -15,6 +15,11 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this._sidebarConfig = sidebarConfig;
   }
+  onViewInit(){
+    if(this.audioPlayer){
+      this.audioPlayer.nativeElement.play();
+    }
+  }
   togglePause() {
     if (this.audioPlayer.nativeElement.paused && this.audioPlayer.nativeElement.currentTime > 0 && !this.audioPlayer.nativeElement.ended) {
       this.audioPlayer.nativeElement.play();
