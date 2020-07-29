@@ -26,6 +26,7 @@
 .port_container ul{
     list-style: none;
     display: inline-flex;
+    flex-wrap: wrap;
  }
  .port_container ul li{
    color: var(--theme-color) !important;
@@ -61,13 +62,14 @@
  .filter ul{
     display: flex;
     justify-content: center;
-    max-width: 25rem;
+    max-width: 30rem;
     background: var(--dark-color);
     align-items: center;
     margin: 0;
     border-radius: 1.5rem;
     list-style: none;
     font-size: 1rem;
+    flex-wrap: wrap;
  }
  .filter input[type="radio"]{
      display: none

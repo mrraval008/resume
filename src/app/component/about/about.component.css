@@ -103,3 +103,10 @@
 .intrest_pills .media:hover{
     background: transparent
 }
+
+@media only screen and (max-width: 600px) {
+    .about_text{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
