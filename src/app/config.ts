@@ -200,17 +200,17 @@ export const skillsChartConfig = [
 ]
 export const portfolioConfig = [
     {
-        img:'../../../assets/images/mybook_laptop.png',
+        img:'./assets/images/mybook_laptop.png',
         name:'Facebook Clone',
         description:'A Social Media App to Create/Manage Posts/Comments/Likes. Includes supprt of Live Chat to mingle with closed ones with Live notification enabled on new Message/Like',
-        techStack:['MEAN Stack','Socket.io','Nginx','Docker','JWT'],
+        techStack:['MEAN Stack','Socket.io','BootStrap','Nginx','Docker','JWT'],
         gitLink:'https://github.com/mrraval008/mybook_angular',
         gitBackEnd:'https://github.com/mrraval008/mybook_nodejs',
         projectLink:'https://my-book11.herokuapp.com/',
         type:'fullproject'
     },
     {
-        img:'../../../assets/images/mytour_laptop.png',
+        img:'./assets/images/mytour_laptop.png',
         name:'Tour Booking',
         description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
         techStack:['MEAN Stack','Stripe Payment','MapBox','Nginx','Docker','JWT'],
@@ -220,7 +220,7 @@ export const portfolioConfig = [
         type:'fullproject'
     },
     {
-        img:'../../../assets/images/forkify_laptop.png',
+        img:'./assets/images/forkify_laptop.png',
         name:'Recipe App',
         description:'A recipe App where you can search different food Items. It Includes what all ingridiens and in how much quantity you need to prepare that item.You can add item to your favourite',
         techStack:['Javascript','HTML','CSS' , 'LocalStorage','Forkify-api'],
@@ -229,7 +229,7 @@ export const portfolioConfig = [
         type:'frontproject'
     },
     {
-        img:'../../../assets/images/budget_laptop.png',
+        img:'./assets/images/budget_laptop.png',
         name:'Budget Controller',
         description:'A nicer way to manage your Monthly Budget. You can perform CURD operation for each Item. Includes support of Localstorage to store data.',
         techStack:['Javascript','HTML','CSS' , 'LocalStorage'],
@@ -240,7 +240,7 @@ export const portfolioConfig = [
    
   
     {
-        img:'../../../assets/images/dice_laptop.png',
+        img:'./assets/images/dice_laptop.png',
         name:'Rolling Dice Game',
         description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
         techStack:['Javascript','HTML','CSS'],
@@ -249,7 +249,7 @@ export const portfolioConfig = [
         type:'frontproject'
     },
     {
-        img:'../../../assets/images/omni_laptop.png',
+        img:'./assets/images/omni_laptop.png',
         name:'Omni Food Website',
         description:'A online food delivery website to showcase food quality and monthly subscription plan.',
         techStack:['HTML','CSS','Jquery'],
@@ -257,13 +257,15 @@ export const portfolioConfig = [
         projectLink:'https://mrraval008.github.io/omni_food/',
         type:'websiteproject'
     },
-    // {
-    //     img:'../../../assets/images/home-bg.jpg',
-    //     name:'full stack 3 Facebook Clone',
-    //     description:'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,starred repositories, and sort through your top repos by number of stars, forks, and size.',
-    //     techStack:['Node.js 1','Node.js 2','Node.js 3','Node.js 4'],
-    //     gitLink:'abc',
-    //     projectLink:'aaa',
-    //     type:'fullproject'
-    // },
+    
+     {
+        img:'./assets/images/pwa_insta_laptop.png',
+        name:'PWA Instagram',
+        description:'A simple app to handson different PWA feature like Service worker, push notifiction, background synchronization. Please execuse me for bad UI , as focus was on functionality',
+        extraInfo:'Add workbox=true as parameter in URL for workbox implementation.',
+        techStack:['HTML','CSS','JAVASCRIPT', 'FIREBASE'],
+        gitLink:'https://github.com/mrraval008/PWA_instagram',
+        projectLink:'https://pwagrant-ebc19.web.app/',
+        type:'pwa'
+    },
 ]

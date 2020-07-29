@@ -21,6 +21,10 @@
                 <input type="radio" name="project" id="websiteproject" (change)="filterText='websiteproject'">
                 <label for="websiteproject">WebSite</label>
             </li>
+            <li>
+                <input type="radio" name="project" id="pwa" (change)="filterText='pwa'">
+                <label for="pwa">PWA</label>
+            </li>
         </ul>
     </div>
     <div class="container">
@@ -37,8 +41,9 @@
                     <span>Featured Project</span>
                     <h4>{{config.name}}</h4>
                     <div class="description" [ngClass]="{'translate-left':(ind%2==0)}">
-                        <span>{{config.description}}
-                        </span>
+                        <p>{{config.description}}
+                        </p>
+                        <span *ngIf="config.extraInfo">{{config.extraInfo}}</span>
                     </div>
                     <div>
                         <ul>
@@ -62,7 +67,7 @@
         <!-- <div class="row item d-flex" [ngClass]="{'flex-row-reverse':true}">
             <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
                 <a href="">
-                    <img src="../../../assets/images/home-bg.jpg" alt="">
+                    <img src="./assets/images/home-bg.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -94,7 +99,7 @@
         <div class="row item d-flex">
             <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
                 <a href="">
-                    <img src="../../../assets/images/home-bg.jpg" alt="">
+                    <img src="./assets/images/home-bg.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">

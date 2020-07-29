@@ -8,28 +8,35 @@ import { sidebarConfig } from '../../config'
 })
 export class SidebarComponent implements OnInit {
   public _sidebarConfig;
-  @ViewChild('audioPlayerElem', { static: false }) audioPlayer: ElementRef;
-  public isPlaying:boolean = true
+  private isUserActinCaptured:boolean = false
+  @ViewChild('audioPlayerElem', { static: false }) audioPlayerElem:ElementRef;
+  
+  public isPlaying:boolean = true;
   constructor() { }
 
   ngOnInit() {
     this._sidebarConfig = sidebarConfig;
   }
-  onViewInit(){
-    if(this.audioPlayer){
-      this.audioPlayer.nativeElement.play();
+
+  captureUserAction(){
+    if(!this.isUserActinCaptured){
+      this.isUserActinCaptured = true;
+      this.audioPlayerElem.nativeElement.play();
+      this.isPlaying = true;
+      return;
     }
   }
+
   togglePause() {
-    if (this.audioPlayer.nativeElement.paused && this.audioPlayer.nativeElement.currentTime > 0 && !this.audioPlayer.nativeElement.ended) {
-      this.audioPlayer.nativeElement.play();
+    if(!this.isUserActinCaptured){
+      return;
+    }
+    if(this.audioPlayerElem.nativeElement.paused) {
+      this.audioPlayerElem.nativeElement.play();
       this.isPlaying = true;
     } else {
       this.isPlaying = false;
-      this.audioPlayer.nativeElement.pause();
+      this.audioPlayerElem.nativeElement.pause();
     }
   }
-
-
-
 }
