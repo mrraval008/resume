@@ -269,3 +269,79 @@ export const portfolioConfig = [
         type:'pwa'
     },
 ]
+
+
+export const skillConfig = [
+    {
+        iconName: 'fa fa-music',
+        title: "HTML5",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "CSS3",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "JAVASCRIPT",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "ANGULAR",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "NODEJS",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "EXPRESS",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "MONGODB",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "PWA",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "WEBPACK",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "GULP",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "GIT",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "NGINX",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "DOCKER",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "CI/CD",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "MICROSERVICES",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "MICROFRONTEND",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "REDIS",
+    },
+    {
+        iconName: 'fa fa-music',
+        title: "BOOTSTRAP",
+    }
+]

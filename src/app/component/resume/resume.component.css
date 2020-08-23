@@ -129,3 +129,51 @@
 .black_box{
     min-height: 90.5%
 }
+
+
+.skill_pill .media{
+    align-items: center;
+    background: var(--first-color);
+    justify-content: center;
+    height: 3rem;
+    border-radius: 0.5rem;
+    transition: all .5s;
+}
+.skill_pill .col .icon_circle{
+    position: relative;
+    margin-left: 1rem;
+}
+.skill_pill .col .icon_circle::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 180%;
+    background: var(--dark-color);
+    top: -41%;
+    right: -65%;
+}
+.skill_pill .media-body{
+    margin-left: 1rem;
+}
+.skill_pill .col{
+    padding: 1.3rem;
+}
+.skill_pill i{
+    color: var(--theme-color)
+}
+
+.skill_pill .media:hover{
+    background: transparent
+}
+
+.icon_circle i{
+    font-size: 1.4rem;
+}
+.media-body p{
+    margin: 0;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+.media-body span{
+    color: var(--theme-color) !important
+}
