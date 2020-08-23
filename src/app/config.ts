@@ -269,3 +269,79 @@ export const portfolioConfig = [
         type:'pwa'
     },
 ]
+
+
+export const skillConfig = [
+    {
+        iconName: 'fa fa-star',
+        title: "HTML5",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "CSS3",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "JAVASCRIPT",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "ANGULAR",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "NODEJS",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "EXPRESS",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "MONGODB",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "PWA",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "WEBPACK",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "GULP",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "GIT",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "NGINX",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "DOCKER",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "CI/CD",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "MICROSERVICES",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "MICROFRONTEND",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "REDIS",
+    },
+    {
+        iconName: 'fa fa-star',
+        title: "BOOTSTRAP",
+    }
+]

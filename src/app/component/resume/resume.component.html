@@ -69,6 +69,22 @@
             <span></span>
         </div>
         <div class="black_box">
+            <div class="container skill_pill">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                    <div class="col" *ngFor="let int of skillConfig">
+                        <div class="media">
+                            <div class="mr-3 icon_circle">
+                                <i [class]="int.iconName" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="mt-0">{{int.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="black_box">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12" style="padding: 0 3rem 0 0;">
@@ -131,7 +147,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 

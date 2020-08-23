@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { experienceConfig , educationConfig , skillsBarConfig , skillsChartConfig} from '../../config'
+import { experienceConfig , educationConfig , skillsBarConfig , skillsChartConfig , skillConfig} from '../../config'
 
 @Component({
   selector: 'app-resume',
@@ -12,6 +12,7 @@ export class ResumeComponent implements OnInit {
   public educationConfig = educationConfig;
   public skillsChartConfig = skillsChartConfig;
   public skillsBarConfig = skillsBarConfig;
+  public skillConfig =  skillConfig;
   constructor() {
    }
 
