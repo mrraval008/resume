@@ -63,7 +63,36 @@ export const experienceConfig = [
     {
         role: 'UI Developer',
         companyName: "Riversand Technology Pvt. Ltd.",
-        duration: 'August 2017 - Present',
+        duration: 'August 2010 - Present',
+        content: [
+            
+            {
+                point: 'Leading 3 Teams comprising of UI ,BE and QA developers.'
+            },
+            {
+                point: 'Scrum Master'
+            },
+            {
+                point: 'Individual Contributor'
+            },
+            {
+                point: 'Software architecture and systems testing'
+            },
+            {
+                point: 'Sprint Planning'
+            },
+            {
+                point: 'Ownership and vision'
+            },
+            {
+                point: 'Tech Stack : Angular , Nodejs , Javascript , HTML , CSS , KOTLIN'
+            }
+        ]
+    },
+    {
+        role: 'UI Developer',
+        companyName: "Riversand Technology Pvt. Ltd.",
+        duration: 'August 2017 - August 2020',
         content: [
             {
                 point: 'Write modern, performant, maintainable code for a diverse array of client and internal projects'
@@ -343,5 +372,9 @@ export const skillConfig = [
     {
         iconName: 'fa fa-star',
         title: "BOOTSTRAP",
+    }
+    {
+        iconName: 'fa fa-star',
+        title: "KOTLIN",
     }
 ]
