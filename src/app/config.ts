@@ -61,9 +61,9 @@ export const interstConfig = [
 ]
 export const experienceConfig = [
     {
-        role: 'UI Developer',
-        companyName: "Riversand Technology Pvt. Ltd.",
-        duration: 'August 2010 - Present',
+        role: 'Tech Lead',
+        companyName: "Lendingkart Technology Pvt. Ltd.",
+        duration: 'August 2020 - Present',
         content: [
             
             {
@@ -85,7 +85,7 @@ export const experienceConfig = [
                 point: 'Ownership and vision'
             },
             {
-                point: 'Tech Stack : Angular , Nodejs , Javascript , HTML , CSS , KOTLIN'
+                point: 'Tech Stack : React , Angular , Nodejs , Javascript , HTML , CSS , KOTLIN'
             }
         ]
     },
@@ -101,7 +101,7 @@ export const experienceConfig = [
                 point: 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
             },
             {
-                point: 'Tech Stack : Polymer , Nodejs , Javascript , HTML , CSS'
+                point: 'Tech Stack : React, Angular, Polymer , Nodejs , Javascript , HTML , CSS'
             }
         ]
     },
