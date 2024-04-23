@@ -62,7 +62,7 @@ export const interstConfig = [
 export const experienceConfig = [
     {
         role: 'Tech Lead',
-        companyName: "Lendingkart Technology Pvt. Ltd.",
+        companyName: "Lendingkart Technology Pvt. Ltd.,Banagalore",
         duration: 'August 2020 - Present',
         content: [
             
